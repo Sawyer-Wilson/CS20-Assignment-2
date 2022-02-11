@@ -1,0 +1,92 @@
+/* Page Banner */
+#banner {
+    background-image: url(photos/grass.jpeg);
+    background-position: center;
+    min-height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 > a {
+    font-family: Merriweather, serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(89, 62, 26);
+    background-color: rgb(245, 245, 245, 0.35);
+    padding: 10px 16px;
+    margin: 0px 34px;
+}
+
+/* Nav Bar */
+nav {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav > a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+nav > a:hover {
+    color: rgb(89, 62, 26);
+}
+
+/* Main Page Content */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+h2 {
+    text-align: center; 
+    margin: 50px 0px;
+    font-size: 26px;
+}
+h3 {font-size: 24px;}
+
+@media (max-width: 1075px) {
+    body {font-size: 14px;}
+    h3 {font-size: 18px;}
+    nav > a {font-size: 16px;}
+}
+@media (max-width: 875px) {
+    body {font-size: 12px;}
+    h3 {font-size: 16px;}
+    nav > a {font-size: 16px;}
+}
+@media (max-width: 700px) {
+    nav {flex-direction: column;}
+}
+@media (max-width: 425px) {
+    nav > a {font-size: 14px;}
+    h1 {margin: 0px 15px}
+}
+
+main {
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    min-height: 125px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

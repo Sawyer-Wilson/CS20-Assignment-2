@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <title>Tufts of Grass Landscaping</title>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .block {
+            margin: 50px;
+            display: flex;
+            align-items: center;
+            gap: 75px
+        }
+        img {
+            max-width: 50%;
+            object-fit: cover;
+            border: 3px solid rgb(89, 62, 26);
+        }
+        #reverse {flex-direction: row-reverse;}
+        .content {max-width: 45%;}
+        .author {font-style: italic;}
+        
+        @media (max-width: 775px) {
+            .block {
+                flex-direction: column;
+                margin: 15px;
+                gap: 15px;
+            }
+            #reverse {flex-direction: column;}
+            img {max-width: 90%;}
+            .content {max-width: 90%;}
+        }
+    </style>
+</head>
+<body>
+    <header id="banner">
+        <h1><a href="index.html">Tufts of Grass Landscaping</a></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="block">
+            <div class="content">
+                <header>
+                    <h3>Who we are</h3>
+                </header>
+                <div>
+                    <p>The Tufts of Grass Landscaping Company was started by three friends who grew up helping their families and neighbors with odd landscaping projects. Eventually, we came together realizing that we had the experience and tools necessary to found our own company. We have now been providing high quality landscape services to homeowners throughout the northeast for three years. Our success is rooted in our devotion and loyalty to our customers.</p>
+                </div>
+            </div>
+            <img src="photos/trees.jpeg" alt="Newly Planted Trees">
+        </section>
+
+        <section class="block" id="reverse">
+            <div class="content">
+                <header>
+                    <h3>What we care about</h3>
+                </header>
+                <ul>
+                    <li>Commitment to our Customers</li>
+                    <li>Quality of Work</li>
+                    <li>Upholding a High Standard of Integrity</li>
+                    <li>Promoting Community and Teamwork</li>
+                    <li>Respecting the Earth</li>
+                </ul>
+            </div>
+            <img src="photos/rock-path.jpeg" alt="Rock Path Between Bushes">
+        </section>
+
+        <section class="block">
+            <div class="content">
+                <header>
+                    <h3>What people are saying</h3>
+                </header>
+                <div>
+                    <div>
+                        <p>"The Tufts of Grass Landscaping crew did an AMAZING job with my yard! It has never looked this good!"</p>
+                        <p class="author">- Carter Brooks</p>
+                    </div>
+                    <div>
+                        <p>"I have never seen anyone with a work ethic as strong as these guys."</p>
+                        <p class="author">- Tony Morton</p>
+                    </div>
+                    <div>
+                        <p>"This company is a breath of fresh air. They were extremely prompt and responsive when giving me a quote and their prices are much lower than every other company I talked to. They were incredibly professional and fun to work with. I can't wait to hire them for my next project!"</p>
+                        <p class="author">- Alexandria Serrano</p>
+                    </div>
+                </div>
+            </div>
+            <img src="photos/garden.jpeg" alt="Garden with Sculpture">
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2022 Tufts of Grass Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
